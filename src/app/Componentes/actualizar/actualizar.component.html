@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="card">
+       <div class="card-header">
+           <h4 class="hard-title">
+               Actualizar Moneda
+           </h4>
+       </div>
+       <div class="card-body">
+           <div class="mb-3">
+               <label for ="numCia">NumCia</label>
+               <input type="number" name="numCia" class="form-control" [(ngModel)]="moneda.numCia" readonly>
+           </div>
+           <div class="mb-3">
+               <label for ="claveMoneda">Clave Moneda</label>
+               <input type="text" name="claveMoneda" class="form-control" [(ngModel)]="moneda.claveMoneda" required maxlength="3">
+           </div>
+           <div class="mb-3">
+               <label for ="descripcion">Descripcion</label>
+               <input type="text" name="descripcion" class="form-control" [(ngModel)]="moneda.descripcion" required maxlength="30">
+           </div>
+           <div class="mb-3">
+               <label for ="simbolo">Simbolo</label>
+               <input type="text" name="simbolo" class="form-control" [(ngModel)]="moneda.simbolo" required maxlength="5">
+           </div>
+           <div class="mb-3">
+               <label for ="abreviacion">Abreviacion</label>
+               <input type="text" name="abreviacion" class="form-control"[(ngModel)]="moneda.abreviacion"  required maxlength="5">
+           </div>
+           <div class="mb-3">
+                <label for ="monedaCorriente">Moneda Corriente</label>
+                <input type="text" name="monedaCorriente" class="form-control"[(ngModel)]="moneda.monedaCorriente"  required maxlength="1">
+            </div>
+            <div class="mb-3">
+                <label for ="status">Status</label>
+                <input type="text" name="status" class="form-control"[(ngModel)]="moneda.status"  required maxlength="1">
+            </div>
+           <div class="card-footer" style="text-align: center;">
+               <button class="btn btn-outline-warning" (click)="actualizar()" >ACTUALIZAR ✎</button>
+           </div>
+       </div>
+    </div>
+   </div>
